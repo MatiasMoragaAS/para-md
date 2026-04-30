@@ -315,5 +315,5 @@ Proyecto robusto, documentado, testeado y entregado. Versión final jugable y pr
  Lo que NO se logró:
 (Se llena al final de la semana)
 
-📝 Notas:
+ Notas:
 (Problemas encontrados, soluciones, cambios de plan)
