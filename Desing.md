@@ -117,7 +117,7 @@ Proyecto/
 | `@vue/test-utils` | ^2.4.0 | Utilidades para testing de Vue |
 | `jsdom` | ^22.1.0 | DOM para pruebas |
 
-### Frameworks Visuales Recomendados:
+### Frameworks Visuales :
 
 #### **NES.css** - Framework CSS estilo Nintendo NES
 ```css
