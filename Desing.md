@@ -10,7 +10,16 @@
 [Enlace al repositorio]
 
 ---
+## Descripción del juego:
 
+### Contexto:
+Tras el estallido de una Tercera Guerra Mundial, múltiples potencias lanzaron ataques nucleares que devastaron gran parte del planeta. Las ciudades quedaron reducidas a ruinas, el aire se volvió peligroso de respirar y los recursos básicos comenzaron a escasear rápidamente. La mayoría de la población no sobrevivió.
+En este nuevo mundo, los pocos sobrevivientes deben refugiarse en estructuras improvisadas para resistir las condiciones extremas del entorno: radiación, contaminación, enfermedades y la constante amenaza de otros humanos desesperados.
+El jugador asume el rol de un sobreviviente que ha logrado resguardarse en un refugio, dependiendo de qué lugar elija, la dificultad y los recursos varían, Desde allí, deberá tomar decisiones críticas día a día para mantenerse con vida, administrar recursos limitados como comida, agua y suministros médicos, y enfrentar eventos impredecibles que pondrán a prueba su juicio y moral.
+Cada decisión tendrá consecuencias, y no siempre existirá una opción correcta. El objetivo es sobrevivir la mayor cantidad de días posible con un límite de 15 días para la victoria
+Mecánicas: El juego se basa en un sistema de supervivencia por días, donde el jugador debe tomar decisiones estratégicas tras cada evento que suceda para mantenerse con vida y administrar sus suministros hasta el día 15. Cada evento puede traer beneficios o provocar perdidas, los recursos que se deben administrar es la comida, agua, salud y moral, que van restando cada día y según las decisiones que tomes Si tu salud llega a 0 pierdes, el resto de los recursos si llegan a 0, la vida bajara cada día hasta que la salud llegue a 0, por eso es importante tener siempre comida, agua y moral.
+
+---
 ## 1. Mockups de Pantallas Principales
 
 ### Pantalla 1: Inicio / Día 0 (Noticia en TV)
@@ -109,23 +118,23 @@ Proyecto/
 ```
 Componentes útiles:
 
--nes-container - Contenedores estilo retro
+- nes-container - Contenedores estilo retro
 
--nes-btn - Botones 8-bit
+- nes-btn - Botones 8-bit
 
--nes-icon heart - Iconos de corazón
+- nes-icon heart - Iconos de corazón
 
--nes-progress - Barras de progreso
+- nes-progress - Barras de progreso
 
 Pixelium Design - Componentes pixel art para Vue 3:
 
 Componentes útiles:
 
--px-card - Tarjetas con borde pixel
+- px-card - Tarjetas con borde pixel
 
--px-button - Botones con efecto click
+- px-button - Botones con efecto click
 
--px-progress - Barras de estadísticas
+- px-progress - Barras de estadísticas
 
 Google Fonts (tipografía retro):
 
