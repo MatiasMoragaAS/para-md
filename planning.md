@@ -113,31 +113,31 @@ Proyecto/
   npm install
 ```
 
-- [ ]Instalar dependencias principales:
+- [ ] Instalar dependencias principales:
 ```
 npm install pinia
 npm install nes.css
 npm install @mmt817/pixel-ui
 npm install -D vitest @vue/test-utils jsdom
 ```
-- [ ]Configurar Vue Router (aunque sea simple, por escalabilidad)
+- [ ] Configurar Vue Router (aunque sea simple, por escalabilidad)
 
-- [ ]Configurar vite.config.js para alias y assets
+- [ ] Configurar vite.config.js para alias y assets
 
 Componentes base:
 
-- [ ]Crear main.js con configuración de Pinia
+- [ ] Crear main.js con configuración de Pinia
 
-- [ ]Crear App.vue con estructura principal (contenedor 16:9)
+- [ ] Crear App.vue con estructura principal (contenedor 16:9)
 
-- [ ]Implementar componente StatBar.vue (comida, agua, salud, moral + día)
+- [ ] Implementar componente StatBar.vue (comida, agua, salud, moral + día)
 
-- [ ]Implementar componente PixelBackground.vue (fondo dinámico)
+- [ ] Implementar componente PixelBackground.vue (fondo dinámico)
 
-- [ ]Implementar estilos base con efecto CRT (scanlines + vignette)
+- [ ] Implementar estilos base con efecto CRT (scanlines + vignette)
 
 Docker:
-- [ ]Crear Dockerfile inicial:
+- [ ] Crear Dockerfile inicial:
 ```
 FROM node:18-alpine
 WORKDIR /app
@@ -165,7 +165,7 @@ Proyecto ejecutable en navegador con pantalla inicial, estadísticas visibles y 
 📋 Tareas planificadas:
 Estado global (Pinia):
 
-- [ ]Implementar gameStore.js con:
+- [ ] Implementar gameStore.js con:
 
 -State: day, food, water, health, moral, allowedWoman, gameOver, victory
 
@@ -175,7 +175,7 @@ Estado global (Pinia):
 
 Sistema de eventos por día:
 
-- [ ]Crear events.js con array de objetos para cada día:
+- [ ] Crear events.js con array de objetos para cada día:
 ```
 export const events = {
   0: { text: "...", location: "casa", options: [...] },
@@ -183,7 +183,7 @@ export const events = {
   // ... hasta día 25
 }
 ```
-- [ ]Implementar días especiales:
+- [ ] Implementar días especiales:
 
 Día 0: Introducción + noticia TV
 
@@ -205,17 +205,17 @@ Día 25: Victoria
 
 Eventos aleatorios:
 
-- [ ]Implementar sistema de eventos aleatorios para días sin evento fijo
+- [ ] Implementar sistema de eventos aleatorios para días sin evento fijo
 
-- [ ]Crear 6-8 eventos genéricos (positivos, negativos, neutrales)
+- [ ] Crear 6-8 eventos genéricos (positivos, negativos, neutrales)
 
 Componentes interactivos:
 
-- [ ]Implementar StoryText.vue con efecto máquina de escribir
+- [ ] Implementar StoryText.vue con efecto máquina de escribir
 
-- [ ]Implementar sistema de avance por clic/tecla ESPACIO
+- [ ] Implementar sistema de avance por clic/tecla ESPACIO
 
-- [ ]Implementar DecisionButtons.vue (botones dinámicos)
+- [ ] Implementar DecisionButtons.vue (botones dinámicos)
 
 🎯 Objetivo de la semana:
 Juego completamente jugable del día 0 al día 25, con todas las decisiones afectando recursos y mostrando consecuencias.
@@ -235,34 +235,34 @@ Juego completamente jugable del día 0 al día 25, con todas las decisiones afec
 📋 Tareas planificadas:
 ### Pruebas unitarias (Vitest):
 
-- [ ]Configurar Vitest en vite.config.js
+- [ ] Configurar Vitest en vite.config.js
 
-- [ ]Implementar pruebas para gameStore.js:
+- [ ] Implementar pruebas para gameStore.js:
 
-- [ ]Verificar que applyDecision modifica recursos correctamente
+- [ ] Verificar que applyDecision modifica recursos correctamente
 
-- [ ]Verificar que consumeDaily funciona con/without refugiados
+- [ ] Verificar que consumeDaily funciona con/without refugiados
 
-- [ ]Verificar que checkGameStatus detecta game over y victoria
+- [ ] Verificar que checkGameStatus detecta game over y victoria
 
-- [ ]Verificar que resetGame vuelve al estado inicial
+- [ ] Verificar que resetGame vuelve al estado inicial
 
 ### Implementar pruebas para componentes:
 
-- [ ]StatBar.vue: verificar que muestra valores correctos
+- [ ] StatBar.vue: verificar que muestra valores correctos
 
-- [ ]DecisionButtons.vue: verificar que emite eventos
+- [ ] DecisionButtons.vue: verificar que emite eventos
 
 ### GitHub Actions (CI/CD):
 
-- [ ]Crear workflow de Linter (.github/workflows/lint.yml):
-- [ ]Crear workflow de Testing (.github/workflows/test.yml):
+- [ ] Crear workflow de Linter (.github/workflows/lint.yml):
+- [ ] Crear workflow de Testing (.github/workflows/test.yml):
 
 ### DockerHub:
 
-- [ ]Crear workflow de Build y Push a DockerHub (.github/workflows/docker.yml):
+- [ ] Crear workflow de Build y Push a DockerHub (.github/workflows/docker.yml):
 
-- [ ]Configurar secrets en GitHub (DOCKER_USERNAME, DOCKER_TOKEN)
+- [ ] Configurar secrets en GitHub (DOCKER_USERNAME, DOCKER_TOKEN)
 
 ## Sonido (opcional):
 
@@ -288,15 +288,15 @@ Flujo CI/CD funcionando con cada push: linter → pruebas → build Docker → p
 📋 Tareas planificadas:
 ### Mejoras UI/UX:
 
-- [ ]Añadir animaciones de transición entre días
+- [ ] Añadir animaciones de transición entre días
 
-- [ ]Mejorar feedback visual al tomar decisiones
+- [ ] Mejorar feedback visual al tomar decisiones
 
-- [ ]Implementar efecto de partículas (polvo, lluvia opcional)
+- [ ] Implementar efecto de partículas (polvo, lluvia opcional)
 
-- [ ]Asegurar responsividad en móviles (media queries)
+- [ ] Asegurar responsividad en móviles (media queries)
 
-- [ ]Probar en navegadores: Chrome, Firefox, Edge
+- [ ] Probar en navegadores: Chrome, Firefox, Edge
 
   ### Minijuegos (opcional ):
 
@@ -316,39 +316,39 @@ Implementar minijuego Día 12: Atrapar gotas de lluvia
 
 ## Documentación final:
 
-- [ ]Completar README.md con:
+- [ ] Completar README.md con:
 
-- [ ]Instrucciones de instalación local
+- [ ] Instrucciones de instalación local
 
-- [ ]Instrucciones para ejecutar con Docker
+- [ ] Instrucciones para ejecutar con Docker
 
-- [ ]Capturas de pantalla del juego
+- [ ] Capturas de pantalla del juego
 
-- [ ]Link a GitHub Pages (demo)
+- [ ] Link a GitHub Pages (demo)
 
-- [ ]Revisar y actualizar DESIGN.md con decisiones finales
+- [ ] Revisar y actualizar DESIGN.md con decisiones finales
 
-- [ ]Revisar y completar PLANNING.md con resultados de todas las semanas
+- [ ] Revisar y completar PLANNING.md con resultados de todas las semanas
 
 ### Despliegue:
 
-- [ ]Configurar GitHub Pages para demo estática
+- [ ] Configurar GitHub Pages para demo estática
 
-- [ ]Probar que el juego funciona correctamente
+- [ ] Probar que el juego funciona correctamente
 
-- [ ]Verificar que no hay errores en consola
+- [ ] Verificar que no hay errores en consola
 
 ### Entrega:
 
 Enviar correo al profesor con:
 
-- [ ]Nombres de integrantes
+- [ ] Nombres de integrantes
 
-- [ ]Link al repositorio GitHub
+- [ ] Link al repositorio GitHub
 
-- [ ]Link a GitHub Pages
+- [ ] Link a GitHub Pages
 
-- [ ]Link a DockerHub (si aplica)
+- [ ] Link a DockerHub (si aplica)
 
 🎯 Objetivo de la semana:
 Proyecto robusto, documentado, testeado y entregado. Versión final jugable y profesional.
