@@ -1,8 +1,8 @@
-# Documento de Diseño - [Nombre del Juego]
+# Documento de Diseño - [15 dias](se puede cambiar)
 
 ## Integrantes del Grupo
-- [Nombre Integrante 1] - [Rol: Líder técnico / Frontend/Diseño visual / CSS]
-- [Nombre Integrante 2] - [Rol: Lógica de juego / JavaScript/ Testing / Documentación]
+- [Diego Alvarez] 
+- [Matias Moraga] 
 
 ## Repositorio GitHub
 [Enlace al repositorio]
