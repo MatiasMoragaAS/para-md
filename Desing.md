@@ -59,6 +59,7 @@ Mecánicas: El juego se basa en un sistema de supervivencia por días, donde el 
 
 ### Estructura de carpetas propuesta:
 
+```
 Proyecto/
 ├── index.html
 ├── package.json
@@ -66,35 +67,35 @@ Proyecto/
 ├── Dockerfile
 ├── .gitignore
 ├── .github/
-│ └── workflows/
-│ ├── lint.yml
-│ └── test.yml
+│   └── workflows/
+│       ├── lint.yml
+│       └── test.yml
 ├── src/
-│ ├── main.js
-│ ├── App.vue
-│ ├── components/
-│ │ ├── StatBar.vue
-│ │ ├── StoryText.vue
-│ │ ├── DecisionButtons.vue
-│ │ ├── PixelBackground.vue
-│ │ └── minigames/
-│ │ ├── FindCansGame.vue
-│ │ └── CatchRainGame.vue
-│ ├── stores/
-│ │ └── gameStore.js
-│ ├── composables/
-│ │ ├── useAudio.js
-│ │ └── useTypingEffect.js
-│ ├── data/
-│ │ └── events.js
-│ ├── assets/
-│ │ ├── images/
-│ │ └── styles/
-│ └── tests/
-│ └── gameStore.spec.js
+│   ├── main.js
+│   ├── App.vue
+│   ├── components/
+│   │   ├── StatBar.vue
+│   │   ├── StoryText.vue
+│   │   ├── DecisionButtons.vue
+│   │   ├── PixelBackground.vue
+│   │   └── minigames/
+│   │       ├── FindCansGame.vue
+│   │       └── CatchRainGame.vue
+│   ├── stores/
+│   │   └── gameStore.js
+│   ├── composables/
+│   │   ├── useAudio.js
+│   │   └── useTypingEffect.js
+│   ├── data/
+│   │   └── events.js
+│   ├── assets/
+│   │   ├── images/
+│   │   └── styles/
+│   └── tests/
+│       └── gameStore.spec.js
 └── public/
-└── sounds/
-
+    └── sounds/
+```
 
 
 ### Dependencias principales:
