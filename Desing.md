@@ -1,10 +1,8 @@
 # Documento de Diseño - [Nombre del Juego]
 
 ## Integrantes del Grupo
-- [Nombre Integrante 1] - [Rol: Líder técnico / Frontend]
-- [Nombre Integrante 2] - [Rol: Lógica de juego / JavaScript]
-- [Nombre Integrante 3] - [Rol: Diseño visual / CSS]
-- [Nombre Integrante 4] - [Rol: Testing / Documentación]
+- [Nombre Integrante 1] - [Rol: Líder técnico / Frontend/Diseño visual / CSS]
+- [Nombre Integrante 2] - [Rol: Lógica de juego / JavaScript/ Testing / Documentación]
 
 ## Repositorio GitHub
 [Enlace al repositorio]
