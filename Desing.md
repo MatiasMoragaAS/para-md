@@ -24,15 +24,16 @@ Mecánicas: El juego se basa en un sistema de supervivencia por días, donde el 
 
 | Recurso | Rango inicial | Rango máximo | ¿Qué representa? | Efecto si llega a 0 |
 |---------|---------------|--------------|------------------|---------------------|
-| 🍗 Comida | 6 | 20 | Alimento disponible | -12 salud por día |
-| 💧 Agua | 4 | 20 | Hidratación | -15 salud por día |
-| ❤️ Salud | 80 | 100 | Condición física | Game Over |
-| 🧠 Moral | 70 | 100 | Salud mental | Game Over (depresión) |
+|  Comida | 6 | 20 | Alimento disponible | -12 salud por día |
+|  Agua | 4 | 20 | Hidratación | -15 salud por día |
+|  Salud | 80 | 100 | Condición física | Game Over |
+|  Moral | 70 | 100 | Salud mental | Game Over (depresión) |
 
 ---
 ## 1. Mockups de Pantallas Principales
 
 ### Pantalla 1: Inicio / Día 0 (Noticia en TV)
+<img width="1901" height="1065" alt="image" src="https://github.com/user-attachments/assets/b0f8c0c8-dd36-4218-860c-bec558fb8f36" />
 
 ### Pantalla 2: Juego (Día con Decisión)
 
@@ -40,7 +41,7 @@ Mecánicas: El juego se basa en un sistema de supervivencia por días, donde el 
 
 ### Pantalla 4: Game Over
 
-### Pantalla 5: Victoria (Día 25 - Rescate)
+### Pantalla 5: Victoria (Día 15 - Rescate)
 
 
 
@@ -52,20 +53,15 @@ Mecánicas: El juego se basa en un sistema de supervivencia por días, donde el 
 
 **Justificación:**
 
-| Criterio | Justificación |
-|----------|----------------|
-| **Reactividad nativa** | Los cambios en recursos (comida, agua, salud) actualizan automáticamente la UI sin código adicional |
-| **Pinia para estado global** | Ideal para manejar el estado del juego (día, recursos, decisiones) de forma centralizada |
-| **Composition API** | Permite organizar la lógica por funcionalidad (useAudio, useTypingEffect) |
-| **Comunidad y documentación** | Gran soporte, fácil encontrar soluciones a problemas comunes |
-| **Curva de aprendizaje** | Más suave que React, ideal para proyectos académicos |
-| **Rendimiento** | Virtual DOM eficiente, ideal para UI interactiva |
-| **Obligatorio** | El proyecto requiere explícitamente el uso de Vue.js |
+### Justificación del Framework Elegido: Vue.js 3 + Pinia
 
-**Alternativas descartadas:**
-- **React:** Más boilerplate, estado global más complejo (Redux vs Pinia)
-- **Svelte:** Menos comunidad, menos recursos educativos
-- **Vanilla JS:** Mucho código manual, difícil de mantener
+La elección de **Vue.js 3** como framework principal se justifica por varios criterios. En primer lugar, su **reactividad nativa** permite que los cambios en recursos como comida, agua, salud y moral actualicen automáticamente la interfaz de usuario sin necesidad de código adicional. Además, **Pinia** se integra perfectamente para el manejo del **estado global** del juego (día, recursos, decisiones, refugiados), centralizando los datos y evitando el paso manual de props entre componentes.
+
+La **Composition API** de Vue.js 3 permite organizar la lógica por funcionalidad (por ejemplo, `useAudio` para los sonidos 8-bit y `useTypingEffect` para el texto dinámico), facilitando la reutilización de código y el mantenimiento del proyecto. La **comunidad y documentación** de Vue.js son extensas y activas, lo que garantiza soporte y soluciones rápidas a problemas comunes. Su **curva de aprendizaje** es más suave que la de otros frameworks como React, ideal para proyectos académicos con tiempo limitado.
+
+El **rendimiento** del Virtual DOM de Vue.js es eficiente y liviano, perfecto para interfaces interactivas donde los recursos se actualizan constantemente. Finalmente, el uso de **Vue.js es un requisito obligatorio** del proyecto, por lo que su elección está formalmente justificada dentro de los lineamientos de la asignatura.
+
+Por otro lado es uso de NES.css y Pixelium Design se adapta perfectamente a nuestro proposito de crear un juego estilo retro.
 
 ### Estructura de carpetas propuesta:
 
