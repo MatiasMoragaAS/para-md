@@ -52,7 +52,7 @@
 > Tener base documental completa, repositorio configurado y diseño visual definido antes del fin de semana.
 
 ### 📁 Estructura de carpetas propuesta:
-
+```text
 Proyecto/
 ├── index.html
 ├── package.json
@@ -88,7 +88,7 @@ Proyecto/
 │ └── gameStore.spec.js
 └── public/
 └── sounds/
-
+```
 
 ### ✅ Lo que se logró completar:
 *(Se llena al final de la semana)*
