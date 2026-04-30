@@ -11,6 +11,8 @@
 
 ---
 ## Descripción del juego:
+### Género:
+Aventura narrativa / Survival / Toma de decisiones
 
 ### Contexto:
 Tras el estallido de una Tercera Guerra Mundial, múltiples potencias lanzaron ataques nucleares que devastaron gran parte del planeta. Las ciudades quedaron reducidas a ruinas, el aire se volvió peligroso de respirar y los recursos básicos comenzaron a escasear rápidamente. La mayoría de la población no sobrevivió.
@@ -18,6 +20,16 @@ En este nuevo mundo, los pocos sobrevivientes deben refugiarse en estructuras im
 El jugador asume el rol de un sobreviviente que ha logrado resguardarse en un refugio, dependiendo de qué lugar elija, la dificultad y los recursos varían, Desde allí, deberá tomar decisiones críticas día a día para mantenerse con vida, administrar recursos limitados como comida, agua y suministros médicos, y enfrentar eventos impredecibles que pondrán a prueba su juicio y moral.
 Cada decisión tendrá consecuencias, y no siempre existirá una opción correcta. El objetivo es sobrevivir la mayor cantidad de días posible con un límite de 15 días para la victoria
 Mecánicas: El juego se basa en un sistema de supervivencia por días, donde el jugador debe tomar decisiones estratégicas tras cada evento que suceda para mantenerse con vida y administrar sus suministros hasta el día 15. Cada evento puede traer beneficios o provocar perdidas, los recursos que se deben administrar es la comida, agua, salud y moral, que van restando cada día y según las decisiones que tomes Si tu salud llega a 0 pierdes, el resto de los recursos si llegan a 0, la vida bajara cada día hasta que la salud llegue a 0, por eso es importante tener siempre comida, agua y moral.
+
+### Mecánicas del Juego
+### Sistema de Recursos
+
+| Recurso | Rango inicial | Rango máximo | ¿Qué representa? | Efecto si llega a 0 |
+|---------|---------------|--------------|------------------|---------------------|
+| 🍗 Comida | 6 | 20 | Alimento disponible | -12 salud por día |
+| 💧 Agua | 4 | 20 | Hidratación | -15 salud por día |
+| ❤️ Salud | 80 | 100 | Condición física | Game Over |
+| 🧠 Moral | 70 | 100 | Salud mental | Game Over (depresión) |
 
 ---
 ## 1. Mockups de Pantallas Principales
@@ -144,24 +156,3 @@ Google Fonts (tipografía retro):
 ```
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Descripción del juego:
-
-Contexto: Tras el estallido de una Tercera Guerra Mundial, múltiples potencias lanzaron ataques nucleares que devastaron gran parte del planeta. Las ciudades quedaron reducidas a ruinas, el aire se volvió peligroso de respirar y los recursos básicos comenzaron a escasear rápidamente. La mayoría de la población no sobrevivió.
-En este nuevo mundo, los pocos sobrevivientes deben refugiarse en estructuras improvisadas para resistir las condiciones extremas del entorno: radiación, contaminación, enfermedades y la constante amenaza de otros humanos desesperados.
-El jugador asume el rol de un sobreviviente que ha logrado resguardarse en un refugio, dependiendo de qué lugar elija, la dificultad y los recursos varían, Desde allí, deberá tomar decisiones críticas día a día para mantenerse con vida, administrar recursos limitados como comida, agua y suministros médicos, y enfrentar eventos impredecibles que pondrán a prueba su juicio y moral.
-Cada decisión tendrá consecuencias, y no siempre existirá una opción correcta. El objetivo es sobrevivir la mayor cantidad de días posible con un límite de 15 días para la victoria
-Mecánicas: El juego se basa en un sistema de supervivencia por días, donde el jugador debe tomar decisiones estratégicas tras cada evento que suceda para mantenerse con vida y administrar sus suministros hasta el día 15. Cada evento puede traer beneficios o provocar perdidas, los recursos que se deben administrar es la comida, agua, salud y moral, que van restando cada día y según las decisiones que tomes Si tu salud llega a 0 pierdes, el resto de los recursos si llegan a 0, la vida bajara cada día hasta que la salud llegue a 0, por eso es importante tener siempre comida, agua y moral
