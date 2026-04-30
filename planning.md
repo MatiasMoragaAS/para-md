@@ -1,10 +1,9 @@
-# Planificación del Proyecto - Apocalipsis 25
+# Planificación del Proyecto - 15 Dias
 
 ## Integrantes del Grupo
-- [Nombre Integrante 1] - [Rol: Líder técnico / Frontend]
-- [Nombre Integrante 2] - [Rol: Lógica de juego / JavaScript]
-- [Nombre Integrante 3] - [Rol: Diseño visual / CSS]
-- [Nombre Integrante 4] - [Rol: Testing / Documentación]
+- [Diego Alvarez] -
+- [Matias Moraga] - 
+
 
 ## Repositorio GitHub
 [Enlace al repositorio]
@@ -22,7 +21,7 @@
 
 ## Semana 1 – Diseño y Planificación
 
-### 📋 Tareas planificadas:
+### Tareas planificadas:
 
 **Antes de escribir código:**
 - [ ] Crear repositorio en GitHub con `.gitignore` (node_modules, dist, .env)
@@ -48,62 +47,23 @@
 - [ ] Seleccionar tipografías: `Press Start 2P` + `VT323`
 - [ ] Definir assets necesarios (imágenes pixel art para fondos)
 
-### 🎯 Objetivo de la semana:
+### Objetivo de la semana:
 > Tener base documental completa, repositorio configurado y diseño visual definido antes del fin de semana.
 
-### 📁 Estructura de carpetas propuesta:
-```text
-Proyecto/
-├── index.html
-├── package.json
-├── vite.config.js
-├── Dockerfile
-├── .gitignore
-├── .github/
-│   └── workflows/
-│       ├── lint.yml
-│       └── test.yml
-├── src/
-│   ├── main.js
-│   ├── App.vue
-│   ├── components/
-│   │   ├── StatBar.vue
-│   │   ├── StoryText.vue
-│   │   ├── DecisionButtons.vue
-│   │   ├── PixelBackground.vue
-│   │   └── minigames/
-│   │       ├── FindCansGame.vue
-│   │       └── CatchRainGame.vue
-│   ├── stores/
-│   │   └── gameStore.js
-│   ├── composables/
-│   │   ├── useAudio.js
-│   │   └── useTypingEffect.js
-│   ├── data/
-│   │   └── events.js
-│   ├── assets/
-│   │   ├── images/
-│   │   └── styles/
-│   └── tests/
-│       └── gameStore.spec.js
-└── public/
-    └── sounds/
-```
-
-### ✅ Lo que se logró completar:
+###  Lo que se logró completar:
 *(Se llena al final de la semana)*
 
-### ❌ Lo que NO se logró:
+###  Lo que NO se logró:
 *(Se llena al final de la semana)*
 
-### 📝 Notas:
+###  Notas:
 *(Problemas encontrados, soluciones, cambios de plan)*
 
 ---
 
 ## Semana 2 – Configuración y Primeros Componentes
 
-### 📋 Tareas planificadas:
+###  Tareas planificadas:
 
 **Configuración del proyecto:**
 - [ ] Inicializar proyecto Vue.js 3 con Vite:
@@ -147,22 +107,22 @@ COPY . .
 EXPOSE 5173
 CMD ["npm", "run", "dev", "--", "--host", "0.0.0.0"]
 ```
-🎯 Objetivo de la semana:
+ Objetivo de la semana:
 Proyecto ejecutable en navegador con pantalla inicial, estadísticas visibles y fondos dinámicos funcionando.
 
-✅ Lo que se logró completar:
+ Lo que se logró completar:
 (Se llena al final de la semana)
 
-❌ Lo que NO se logró:
+ Lo que NO se logró:
 (Se llena al final de la semana)
 
-📝 Notas:
+ Notas:
 (Problemas encontrados, soluciones, cambios de plan)
 
 ---
 
 ## Semana 3 – Desarrollo de Mecánicas y Lógica del Juego
-📋 Tareas planificadas:
+ Tareas planificadas:
 Estado global (Pinia):
 
 - [ ] Implementar gameStore.js con:
@@ -195,13 +155,11 @@ Día 5: Medicina (+28 salud)
 
 Día 8: Manual primeros auxilios
 
-Día 12: Cooperación con refugiados
+Día 11: Ataque de saqueadores
 
-Día 17: Ataque de saqueadores
+Día 13: Señal de radio
 
-Día 22: Señal de radio
-
-Día 25: Victoria
+Día 15: Victoria
 
 Eventos aleatorios:
 
@@ -217,22 +175,22 @@ Componentes interactivos:
 
 - [ ] Implementar DecisionButtons.vue (botones dinámicos)
 
-🎯 Objetivo de la semana:
+ Objetivo de la semana:
 Juego completamente jugable del día 0 al día 25, con todas las decisiones afectando recursos y mostrando consecuencias.
 
-✅ Lo que se logró completar:
+ Lo que se logró completar:
 (Se llena al final de la semana)
 
-❌ Lo que NO se logró:
+ Lo que NO se logró:
 (Se llena al final de la semana)
 
-📝 Notas:
+ Notas:
 (Problemas encontrados, soluciones, cambios de plan)
 
 ---
 
 ## Semana 4 – Testing y CI/CD
-📋 Tareas planificadas:
+ Tareas planificadas:
 ### Pruebas unitarias (Vitest):
 
 - [ ] Configurar Vitest en vite.config.js
@@ -264,28 +222,28 @@ Juego completamente jugable del día 0 al día 25, con todas las decisiones afec
 
 - [ ] Configurar secrets en GitHub (DOCKER_USERNAME, DOCKER_TOKEN)
 
-## Sonido (opcional):
+## Sonido :
 
 Implementar useAudio.js con Web Audio API
 
 Añadir sonidos: click, damage, victory, game over
 
-🎯 Objetivo de la semana:
+ Objetivo de la semana:
 Flujo CI/CD funcionando con cada push: linter → pruebas → build Docker → push a DockerHub.
 
-✅ Lo que se logró completar:
+ Lo que se logró completar:
 (Se llena al final de la semana)
 
-❌ Lo que NO se logró:
+ Lo que NO se logró:
 (Se llena al final de la semana)
 
-📝 Notas:
+ Notas:
 (Problemas encontrados, soluciones, cambios de plan)
 
 ---
 
 ## Semana 5 – Pulido, Minijuegos y Entrega Final
-📋 Tareas planificadas:
+ Tareas planificadas:
 ### Mejoras UI/UX:
 
 - [ ] Añadir animaciones de transición entre días
@@ -330,9 +288,7 @@ Implementar minijuego Día 12: Atrapar gotas de lluvia
 
 - [ ] Revisar y completar PLANNING.md con resultados de todas las semanas
 
-### Despliegue:
-
-- [ ] Configurar GitHub Pages para demo estática
+### comprobar errores:
 
 - [ ] Probar que el juego funciona correctamente
 
@@ -348,15 +304,15 @@ Enviar correo al profesor con:
 
 - [ ] Link a GitHub Pages
 
-- [ ] Link a DockerHub (si aplica)
+- [ ] Link a DockerHub 
 
-🎯 Objetivo de la semana:
+ Objetivo de la semana:
 Proyecto robusto, documentado, testeado y entregado. Versión final jugable y profesional.
 
-✅ Lo que se logró completar:
+ Lo que se logró completar:
 (Se llena al final de la semana)
 
-❌ Lo que NO se logró:
+ Lo que NO se logró:
 (Se llena al final de la semana)
 
 📝 Notas:
