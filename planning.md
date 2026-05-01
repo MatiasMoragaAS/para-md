@@ -25,11 +25,10 @@
 
 **Antes de escribir código:**
 - [x] Crear repositorio en GitHub
-- [ ] Invitar a todos los integrantes al repositorio
-- [ ] Configurar ramas: `main`
+- [x] Invitar a todos los integrantes al repositorio
 
 **Documentación:**
-- [ ] Redactar `DESIGN.md` completo con:
+- [x] Redactar `DESIGN.md` completo con:
   - Mockups de pantallas principales:
     - Pantalla de inicio (Día 0 - Noticia en TV)
     - Pantalla de juego (estadísticas + área de decisiones)
@@ -39,22 +38,22 @@
     - *Por qué Vue.js: Reactividad nativa, fácil manejo de estado con Pinia, comunidad grande, ideal para UI interactiva*
   - Estructura de carpetas propuesta (ver abajo)
   - Descripción del juego: mecánicas, reglas, flujo
-- [ ] Redactar `PLANNING.md` inicial con este cronograma
-- [ ] Crear `README.md` base
+- [x] Redactar `PLANNING.md` inicial con este cronograma
+- [x] Crear `README.md` base
 
 **Diseño visual preliminar:**
 - [ ] Elegir paleta de colores retro (verdes militares, grises, amarillos cálidos)
-- [ ] Seleccionar tipografías: `Press Start 2P` + `VT323`
+- [x] Seleccionar tipografías: `Press Start 2P` + `VT323`
 - [ ] Definir assets necesarios (imágenes pixel art para fondos)
 
 ### Objetivo de la semana:
 > Tener base documental completa, repositorio configurado y diseño visual definido antes del fin de semana.
 
 ###  Lo que se logró completar:
-*(Se llena al final de la semana)*
+*(Fecha 30/04/2026)* Se logró la creación del repositorio y la documentación; el DESIGN.md y PLANNING.md se agregaron correctamente al repositorio.
 
 ###  Lo que NO se logró:
-*(Se llena al final de la semana)*
+*(Fecha 30/04/2026)* Falta la designación de la paleta de colores del juego, como a su vez imágenes pixel art para fondos; se decidirá a más tardar el domingo 03/05/2026.
 
 ###  Notas:
 *(Problemas encontrados, soluciones, cambios de plan)*
