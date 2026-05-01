@@ -5,21 +5,25 @@
 - [Matias Moraga] 
 
 ## Repositorio GitHub
-[Enlace al repositorio]
+[(https://github.com/DiegoUC-01/Solemne2)]
 
 ---
 ## Descripción del juego:
+
 ### Género:
 Aventura narrativa / Survival / Toma de decisiones
 
-### Contexto:
+### Premisa:
 Tras el estallido de una Tercera Guerra Mundial, múltiples potencias lanzaron ataques nucleares que devastaron gran parte del planeta. Las ciudades quedaron reducidas a ruinas, el aire se volvió peligroso de respirar y los recursos básicos comenzaron a escasear rápidamente. La mayoría de la población no sobrevivió.
 En este nuevo mundo, los pocos sobrevivientes deben refugiarse en estructuras improvisadas para resistir las condiciones extremas del entorno: radiación, contaminación, enfermedades y la constante amenaza de otros humanos desesperados.
-El jugador asume el rol de un sobreviviente que ha logrado resguardarse en un refugio, dependiendo de qué lugar elija, la dificultad y los recursos varían, Desde allí, deberá tomar decisiones críticas día a día para mantenerse con vida, administrar recursos limitados como comida, agua y suministros médicos, y enfrentar eventos impredecibles que pondrán a prueba su juicio y moral.
+
+El jugador asume el rol de un sobreviviente que ha logrado resguardarse en un refugio, Desde allí, deberá tomar decisiones críticas día a día para mantenerse con vida, administrar recursos limitados como comida, agua y suministros médicos, y enfrentar eventos impredecibles que pondrán a prueba su juicio y moral.
+
 Cada decisión tendrá consecuencias, y no siempre existirá una opción correcta. El objetivo es sobrevivir la mayor cantidad de días posible con un límite de 15 días para la victoria
-Mecánicas: El juego se basa en un sistema de supervivencia por días, donde el jugador debe tomar decisiones estratégicas tras cada evento que suceda para mantenerse con vida y administrar sus suministros hasta el día 15. Cada evento puede traer beneficios o provocar perdidas, los recursos que se deben administrar es la comida, agua, salud y moral, que van restando cada día y según las decisiones que tomes Si tu salud llega a 0 pierdes, el resto de los recursos si llegan a 0, la vida bajara cada día hasta que la salud llegue a 0, por eso es importante tener siempre comida, agua y moral.
 
 ### Mecánicas del Juego
+
+El juego se basa en un sistema de supervivencia por días, donde el jugador debe tomar decisiones estratégicas tras cada evento que suceda para mantenerse con vida y administrar sus suministros hasta el día 15. Cada evento puede traer beneficios o provocar perdidas, los recursos que se deben administrar es la comida, agua, salud y moral, que van restando cada día y según las decisiones que tomes Si tu salud y moral llegan a 0 pierdes, el resto de los recursos si llegan a 0, la vida bajara cada día hasta que la salud llegue a 0, por eso es importante tener siempre comida, agua y moral.
 ### Sistema de Recursos
 
 | Recurso | Rango inicial | Rango máximo | ¿Qué representa? | Efecto si llega a 0 |
@@ -42,9 +46,6 @@ Mecánicas: El juego se basa en un sistema de supervivencia por días, donde el 
 ### Pantalla 4: Game Over
 <img width="1884" height="1050" alt="image" src="https://github.com/user-attachments/assets/4200dfb3-980c-49c6-8520-516b6ae27d83" />
 
-
-
-
 ---
 
 ## 2. Especificaciones de Tecnología
@@ -57,11 +58,19 @@ Mecánicas: El juego se basa en un sistema de supervivencia por días, donde el 
 
 La elección de **Vue.js 3** como framework principal se justifica por varios criterios. En primer lugar, su **reactividad nativa** permite que los cambios en recursos como comida, agua, salud y moral actualicen automáticamente la interfaz de usuario sin necesidad de código adicional. Además, **Pinia** se integra perfectamente para el manejo del **estado global** del juego (día, recursos, decisiones, refugiados), centralizando los datos y evitando el paso manual de props entre componentes.
 
-La **Composition API** de Vue.js 3 permite organizar la lógica por funcionalidad (por ejemplo, `useAudio` para los sonidos 8-bit y `useTypingEffect` para el texto dinámico), facilitando la reutilización de código y el mantenimiento del proyecto. La **comunidad y documentación** de Vue.js son extensas y activas, lo que garantiza soporte y soluciones rápidas a problemas comunes. Su **curva de aprendizaje** es más suave que la de otros frameworks como React, ideal para proyectos académicos con tiempo limitado.
+La **Composition API** de Vue.js 3 permite organizar la lógica por funcionalidad (por ejemplo, `useAudio` para los sonidos 8-bit y `useTypingEffect` para el texto dinámico), facilitando la reutilización de código y el mantenimiento del proyecto. La **comunidad y documentación** de Vue.js son extensas y activas, lo que garantiza soporte y soluciones rápidas a problemas comunes.
 
-El **rendimiento** del Virtual DOM de Vue.js es eficiente y liviano, perfecto para interfaces interactivas donde los recursos se actualizan constantemente. Finalmente, el uso de **Vue.js es un requisito obligatorio** del proyecto, por lo que su elección está formalmente justificada dentro de los lineamientos de la asignatura.
+Finalmente, el uso de **Vue.js es un requisito obligatorio** del proyecto, por lo que su elección está formalmente justificada dentro de la asignatura.
 
-Por otro lado es uso de NES.css y Pixelium Design se adapta perfectamente a nuestro proposito de crear un juego estilo retro.
+### Justificación de Frameworks Visuales: NES.css + Pixelium Design
+
+La combinación de **NES.css** y **Pixelium Design** se adapta perfectamente al propósito de crear un juego estilo retro por las siguientes razones:
+
+**NES.css** reproduce el estilo visual de la consola Nintendo NES (8 bits), incorporando botones, fuentes, contenedores y efectos visuales que eran típicos en la década de 1980/1990. El jugador se mantiene en la estética retro y la ambientación se refuerza gracias a sus bordes pixelados, sus sombras definidas y sus iconos de estrella y corazón. A su vez, **Pixelium Design** está diseñado con el propósito de crear interfaces de usuario de estilo pixel art, ofreciendo componentes que aseguran la uniformidad visual a lo largo del juego.  
+
+#### Facilidad de implementación y compatibilidad
+
+**NES.css** solo requiere importar el archivo CSS y agregar clases HTML, sin necesidad de JavaScript adicional ni configuración compleja. Al ser puramente CSS, es 100% compatible con Vue.js 3 y no genera conflictos con la reactividad del framework. **Pixelium Design**, por su parte, proporciona componentes Vue 3 listos para usar (`<px-button>`, `<px-card>`), con props y eventos ya definidos, lo que acelera el desarrollo. Está desarrollado específicamente para Vue.js 3 Composition API, con soporte TypeScript nativo y optimizado para el ecosistema Vue.
 
 ### Estructura de carpetas propuesta:
 
@@ -103,26 +112,24 @@ Proyecto/
     └── sounds/
 ```
 
-
 ### Dependencias principales:
 
 | Dependencia | Versión | Propósito |
-|-------------|---------|-----------|
-| `vue` | ^3.3.0 | Framework principal |
-| `pinia` | ^2.1.0 | Estado global |
-| `nes.css` | ^2.3.0 | Framework visual retro (NES) |
-| `@mmt817/pixel-ui` | ^1.0.0 | Componentes pixel art para Vue |
-| `vite` | ^4.4.0 | Build tool |
-| `vitest` | ^0.34.0 | Testing unitario |
-| `@vue/test-utils` | ^2.4.0 | Utilidades para testing de Vue |
-| `jsdom` | ^22.1.0 | DOM para pruebas |
+|-------------|---------|-----------|-------------|
+| `vue` | ^3.5.0 | Framework principal |
+| `pinia` | ^2.1.0 | Estado global | 
+| `nes.css` | ^2.3.0 | Framework CSS retro (NES) | 
+| `@pixelium/web-vue` | ^0.1.4 | Componentes pixel art para Vue (Pixelium Design) | 
+| `vite` | ^8.0.0 | Build tool | 
+| `vitest` | ^4.0.0 | Testing unitario |
+| `@vue/test-utils` | ^2.4.6 | Utilidades para testing de Vue | 
+| `jsdom` | ^29.0.0 | DOM para pruebas | 
+| `oxlint` | ^0.15.0 | Linter ultra-rápido |
+
 
 ### Frameworks Visuales :
 
 #### **NES.css** - Framework CSS estilo Nintendo NES
-```css
-@import 'nes.css/css/nes.min.css';
-```
 Componentes útiles:
 
 - nes-container - Contenedores estilo retro
