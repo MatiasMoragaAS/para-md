@@ -24,7 +24,7 @@
 ### Tareas planificadas:
 
 **Antes de escribir código:**
-- [ ] Crear repositorio en GitHub
+- [x] Crear repositorio en GitHub
 - [ ] Invitar a todos los integrantes al repositorio
 - [ ] Configurar ramas: `main`
 
