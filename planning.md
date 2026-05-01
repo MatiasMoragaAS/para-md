@@ -1,8 +1,8 @@
 # Planificación del Proyecto - 15 Dias
 
 ## Integrantes del Grupo
-- [Diego Alvarez] -
-- [Matias Moraga] - 
+- [Diego Alvarez] 
+- [Matias Moraga]  
 
 
 ## Repositorio GitHub
@@ -24,9 +24,9 @@
 ### Tareas planificadas:
 
 **Antes de escribir código:**
-- [ ] Crear repositorio en GitHub con `.gitignore` (node_modules, dist, .env)
+- [ ] Crear repositorio en GitHub
 - [ ] Invitar a todos los integrantes al repositorio
-- [ ] Configurar ramas: `main`, `develop`, `feature/*`
+- [ ] Configurar ramas: `main`
 
 **Documentación:**
 - [ ] Redactar `DESIGN.md` completo con:
@@ -66,19 +66,19 @@
 ###  Tareas planificadas:
 
 **Configuración del proyecto:**
-- [ ] Inicializar proyecto Vue.js 3 con Vite:
-```
-  npm create vue@latest apocalipsis25
-  cd apocalipsis25
-  npm install
-```
 
+- [ ] Inicializar proyecto Vue.js 3 con Vite usando pnpm:
+```
+pnpm create vue@latest apocalipsis25
+cd apocalipsis25
+pnpm install
+```
 - [ ] Instalar dependencias principales:
 ```
-npm install pinia
-npm install nes.css
-npm install @mmt817/pixel-ui
-npm install -D vitest @vue/test-utils jsdom
+pnpm add pinia
+pnpm add nes.css
+pnpm add @pixelium/web-vue
+pnpm add -D vitest @vue/test-utils jsdom oxlint
 ```
 - [ ] Configurar Vue Router (aunque sea simple, por escalabilidad)
 
@@ -136,13 +136,7 @@ Estado global (Pinia):
 Sistema de eventos por día:
 
 - [ ] Crear events.js con array de objetos para cada día:
-```
-export const events = {
-  0: { text: "...", location: "casa", options: [...] },
-  1: { text: "...", location: "casa", options: [...] },
-  // ... hasta día 25
-}
-```
+
 - [ ] Implementar días especiales:
 
 Día 0: Introducción + noticia TV
@@ -256,7 +250,7 @@ Flujo CI/CD funcionando con cada push: linter → pruebas → build Docker → p
 
 - [ ] Probar en navegadores: Chrome, Firefox, Edge
 
-  ### Minijuegos (opcional ):
+  ### Minijuegos (opcional):
 
 Implementar minijuego Día 3: Buscar latas en supermercado
 
@@ -270,7 +264,7 @@ Implementar minijuego Día 12: Atrapar gotas de lluvia
 
 -Mover balde con mouse
 
--Atrapar 20 gotas en 20 segundos
+-Atrapar 10 gotas en 20 segundos
 
 ## Documentación final:
 
@@ -288,7 +282,7 @@ Implementar minijuego Día 12: Atrapar gotas de lluvia
 
 - [ ] Revisar y completar PLANNING.md con resultados de todas las semanas
 
-### comprobar errores:
+### Comprobar errores:
 
 - [ ] Probar que el juego funciona correctamente
 
