@@ -115,7 +115,7 @@ Proyecto/
 ### Dependencias principales:
 
 | Dependencia | Versión | Propósito |
-|-------------|---------|-----------|-------------|
+|-------------|---------|-----------|
 | `vue` | ^3.5.0 | Framework principal |
 | `pinia` | ^2.1.0 | Estado global | 
 | `nes.css` | ^2.3.0 | Framework CSS retro (NES) | 
