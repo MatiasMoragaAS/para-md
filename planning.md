@@ -6,7 +6,7 @@
 
 
 ## Repositorio GitHub
-[Enlace al repositorio]
+[https://github.com/DiegoUC-01/Solemne2]
 
 ## Tecnologías Principales
 - **Framework:** Vue.js 3 (Composition API)
