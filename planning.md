@@ -143,7 +143,7 @@ Proyecto ejecutable en navegador con pantalla inicial, estadísticas visibles y 
 - [ ] Implementación de useAudio.js
 
  Objetivo de la semana:
-Juego completamente jugable del día 0 al día 25, con todas las decisiones afectando recursos y mostrando consecuencias.
+Tener una Base del Juego completamente jugable del día 0 al día 15, con todas las decisiones afectando recursos y mostrando consecuencias.
 
  Lo que se logró completar:
 (Se llena al final de la semana)
